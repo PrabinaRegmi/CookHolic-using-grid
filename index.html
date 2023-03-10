@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css"
+      integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="app.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="mobile.css"
+    />
+    <title>CookHolic</title>
+  </head>
+  <body>
+    <header id="home">
+      <nav id="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="images/Logo-icon.png" alt="" class="logo-photo" />
+            <h3>CookHolic</h3>
+          </div>
+
+          <ul class="navlists">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">About Us</a></li>
+          </ul>
+
+          <div class="social">
+            <i class="fas fa-search fa-2x"></i>
+            <i class="fas fa-user fa-2x"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- header showcase -->
+      <section class="showcase">
+        <div class="container">
+          <div class="showcase-text">
+            <h1>The Easiest Way To Make Your Favorite Meals</h1>
+            <p>
+              Discover 1000+ recipes in your hand with the best recipe. Help you
+              to find the easiest way to cook.
+            </p>
+            <input
+              type="button"
+              value="Explore Recipes"
+              class="btn btn-secondary"
+            />
+          </div>
+          <div class="showcase-images">
+            <img
+              class="showcase-image1"
+              src="images/food-1.png"
+              alt="first food"
+            />
+            <div class="review review-1">
+              <div class="intro">
+                <img src="images/reviewer-1.png" alt="" />
+                <h4>Nancy</h4>
+              </div>
+              <div class="star">
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+              </div>
+              <p class="psmall">
+                It's an easy recipe that is quick to make and delicious
+              </p>
+            </div>
+
+            <img
+              class="showcase-image2"
+              src="images/food-2.png"
+              alt="second food"
+            />
+            <div class="review review-2">
+              <div class="intro">
+                <img src="images/reviewer-2.png" alt="" />
+                <h4>Harry</h4>
+              </div>
+              <div class="stars">
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+                <i class="fas fa-star" style="color: var(--star-color)"></i>
+                <i
+                  class="fas fa-star-half-alt"
+                  style="color: var(--star-color)"
+                ></i>
+              </div>
+              <p class="psmall">Great and delicious recipe</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Popular recipes section -->
+    <section id="recipes">
+      <div class="container">
+        <div class="recipe-heading">
+          <div class="heading-text">
+            <h2>Popular Recipes Of The Week</h2>
+            <p>Our most popular recipes of this week</p>
+          </div>
+          <a href="#">See all</a>
+        </div>
+        <div class="recipe-cards">
+          <div class="card">
+            <img src="images/Recipe1.png" alt="" srcset="" />
+            <h3>Salmon Salad</h3>
+            <p class="psmall">By Nancy Morrison</p>
+          </div>
+
+          <div class="card">
+            <img src="images/Recipe2.png" alt="" srcset="" />
+            <h3>Ice Matcha Latte</h3>
+            <p class="psmall">By Zoe Ressey</p>
+          </div>
+          <div class="card">
+            <img src="images/Recipe3.png" alt="" srcset="" />
+            <h3>Avocado Toast</h3>
+            <p class="psmall">By Mark Thompson</p>
+          </div>
+          <div class="card">
+            <img src="images/Recipe4.png" alt="" srcset="" />
+            <h3>Easy Mojitos</h3>
+            <p class="psmall">By Ann Yumi</p>
+          </div>
+          <div class="card">
+            <img src="images/Recipe5.png" alt="" srcset="" />
+            <h3>Fluffy pancakes</h3>
+            <p class="psmall">By David Charles</p>
+          </div>
+          <div class="card">
+            <img src="images/Recipe6.png" alt="" srcset="" />
+            <h3>Guacamole</h3>
+            <p class="psmall">By Cara Moore</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breakfast section -->
+    <section id="breakfast" class="breakfast">
+      <div class="container">
+        <div class="breakfast-content">
+          <h3>50+ Breakfast Recipes That Are Very Quick And Easy</h3>
+          <p>
+            Find the perfect food ideas to start your day with the quick and
+            easiest way
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community recipes -->
+    <section id="community-recipes">
+      <div class="container">
+        <h2>Fresh From Our Community</h2>
+        <div class="com-recipies">
+          <div class="recipe-card">
+            <div class="intro">
+              <img src="images/person-1.png" alt="" />
+              <div class="name">
+                <h4>Feta Avocado Toast</h4>
+                <p class="psmall">Lee Seon</p>
+              </div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i
+                class="fas fa-star-half-alt"
+                style="color: var(--star-color)"
+              ></i>
+            </div>
+            <p>
+              It's my favorite avocado toast recipe! Also I added some blueberry
+              on top and surprising it tasetd really good.
+            </p>
+            <img
+              class="recipephoto"
+              src="images/ComRec-1.png"
+              alt=""
+              srcset=""
+            />
+            <div class="social-icons">
+              <div class="like">
+                <i class="fas fa-thumbs-up fa-2x"></i>
+                <p class="psmall">Like</p>
+              </div>
+              <div class="share">
+                <i class="fas fa-share fa-2x"></i>
+                <p class="psmall">Share</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="intro">
+              <img src="images/person-2.png" alt="" />
+              <div class="name">
+                <h4>Grilled Salmon</h4>
+                <p class="psmall">Anne Henderson</p>
+              </div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+            </div>
+            <p>
+              This recipe is so easy to make. I tried this recipe several times
+              and it turned out delicious. I will recommend it to my friends.
+            </p>
+            <img
+              class="recipephoto"
+              src="images/ComRec-2.png"
+              alt=""
+              srcset=""
+            />
+            <div class="social-icons">
+              <div class="like">
+                <i class="fas fa-thumbs-up fa-2x"></i>
+                <p class="psmall">Like</p>
+              </div>
+              <div class="share">
+                <i class="fas fa-share fa-2x"></i>
+                <p class="psmall">Share</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="intro">
+              <img src="images/person-3.png" alt="" />
+              <div class="name">
+                <h4>Creamy Tomato Lasanga</h4>
+                <p class="psmall">Katy Howard</p>
+              </div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-start" style="color: var(--star-color)"></i>
+            </div>
+            <p>
+              My family liked this recipe. I will keep making this recipe more
+              often and recommend to my friends.
+            </p>
+            <img
+              class="recipephoto"
+              src="images/ComRec-3.png"
+              alt=""
+              srcset=""
+            />
+            <div class="social-icons">
+              <div class="like">
+                <i class="fas fa-thumbs-up fa-2x"></i>
+                <p class="psmall">Like</p>
+              </div>
+              <div class="share">
+                <i class="fas fa-share fa-2x"></i>
+                <p class="psmall">Share</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe-card">
+            <div class="intro">
+              <img src="images/person-4.png" alt="" />
+              <div class="name">
+                <h4>Berries Overnight Oats</h4>
+                <p class="psmall">Hannah Lewis</p>
+              </div>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i class="fas fa-star" style="color: var(--star-color)"></i>
+              <i
+                class="fas fa-star-half-alt"
+                style="color: var(--star-color)"
+              ></i>
+            </div>
+            <p>
+              Great and delicious recipe. I used greek yogurt and a scope of
+              vanilla and then I added some berries on it. It tasted amazing!
+            </p>
+            <img
+              class="recipephoto"
+              src="images/ComRec4.png"
+              alt=""
+              srcset=""
+            />
+            <div class="social-icons">
+              <div class="like">
+                <i class="fas fa-thumbs-up fa-2x"></i>
+                <p class="psmall">Like</p>
+              </div>
+              <div class="share">
+                <i class="fas fa-share fa-2x"></i>
+                <p class="psmall">Share</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <div class="footer-about">
+          <div class="logo">
+            <img src="images/Logo-icon.png" alt="" class="logo-photo" />
+            <h3>CookHolic</h3>
+          </div>
+          <p>
+            Discover 1000+ recipes in your hand with the best recipe. Help you
+            to find the easiest way to cook.
+          </p>
+        </div>
+        <div class="footer-advertisement">
+          <h3>Sign up for our newsletter</h3>
+          <input type="email" placeholder="Your email address" />
+          <button type="submit">Submit</button>
+          <div class="social-items">
+            <div class="menu">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+            <div class="Help">
+              <h4>Help</h4>
+              <ul>
+                <li><a href="#">Privacy and Policy</a></li>
+                <li><a href="#">Term of Use</a></li>
+              </ul>
+            </div>
+            <div class="Social">
+              <h4>Social</h4>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instragram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

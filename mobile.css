@@ -1,0 +1,247 @@
+/* css variables */
+:root {
+  --primary-color: #003800;
+  --secondary-color: #037402;
+  --shade1-color: #a3a3a3;
+  --shade2-color: #f0f5f5;
+  --star-color: #e9b01f;
+  --max-width: 1280px;
+  --small-para-fontsize: 14px;
+  --large-para-fontsize: 17px;
+  --heading1-fontsize: 52px;
+  --heading2-fontsize: 38px;
+  --heading3-fontsize: 30px;
+  --heading4-fontsize: 18px;
+  --primary-fontfamily: "Vidaloka", serif;
+  --secondary-fontfamily: "Roboto", sans-serif;
+}
+
+body {
+  line-height: 1.3;
+}
+
+/* Navigation */
+#navbar .container .navlists {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+/* header-showcase section */
+
+.showcase .container {
+  height: 70vh;
+}
+.showcase .showcase-text h1 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 52px;
+}
+
+.showcase .showcase-text p {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.showcase .showcase-image1 {
+  width: 25%px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.showcase .review-1 {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  z-index: 1;
+}
+
+.showcase .showcase-image2 {
+  display: none;
+}
+
+.showcase .review-2 {
+  display: none;
+}
+
+/* breakfast section */
+#breakfast .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Recipe section */
+.card img {
+  width: 300px;
+  margin-bottom: 0.7rem;
+}
+
+#recipes .recipe-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* footer */
+
+#footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --primary-color: #003800;
+    --secondary-color: #037402;
+    --shade1-color: #a3a3a3;
+    --shade2-color: #f0f5f5;
+    --star-color: #e9b01f;
+    --max-width: 1280px;
+    --small-para-fontsize: 10px;
+    --large-para-fontsize: 16px;
+    --heading1-fontsize: 30px;
+    --heading2-fontsize: 20px;
+    --heading3-fontsize: 18px;
+    --heading4-fontsize: 15px;
+    --primary-fontfamily: "Vidaloka", serif;
+    --secondary-fontfamily: "Roboto", sans-serif;
+  }
+  body {
+    line-height: 1;
+  }
+
+  /* Navigation */
+  #navbar .container .navlists {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  #navbar .container .social {
+    font-size: smaller;
+  }
+
+  #navbar .container .navlists li a {
+    font-size: 12px;
+    transition: all 0.2 ease-in-out;
+    margin-bottom: 3rem;
+  }
+  .btn {
+    display: inline-block;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  /* header-showcase section */
+
+  .showcase .container {
+    height: 70vh;
+  }
+
+  .showcase .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-top: 5rem;
+    color: #fff;
+    height: 60vh;
+  }
+  .showcase .showcase-text h1 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 30px;
+  }
+
+  .showcase .showcase-text p {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .showcase .showcase-image1 {
+    display: none;
+  }
+
+  .showcase .review-1 {
+    display: none;
+  }
+  .showcase .showcase-image2 {
+    display: none;
+  }
+
+  .showcase .review-2 {
+    display: none;
+  }
+
+  /* Recipe section */
+  .card img {
+    width: 300px;
+    margin-bottom: 0.7rem;
+  }
+
+  #recipes .recipe-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #recipes a {
+    display: none;
+  }
+
+  /* Breakfast Content */
+  #community-recipes h2 {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  #breakfast .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* Community recipe */
+  #community-recipes .com-recipies {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+  #community-recipes .intro img {
+    width: 40px;
+    height: 40px;
+  }
+  #community-recipes .social-icons {
+    display: flex;
+    gap: 2rem;
+  }
+  #community-recipes .social-icons .like i,
+  #community-recipes .social-icons .share i {
+    font-size: small;
+  }
+
+  #community-recipes .stars i {
+    font-size: small;
+    margin-bottom: 0.3rem;
+  }
+
+  #community-recipes .recipe-card p {
+    margin-bottom: 0.5rem;
+  }
+  /* footer */
+  #footer .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+}
