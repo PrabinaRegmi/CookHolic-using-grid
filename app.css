@@ -278,7 +278,7 @@ h4 {
   align-items: center;
 }
 
-#recipes .recipe-cards > *:nth-child(3),
+/* #recipes .recipe-cards > *:nth-child(3),
 #recipes .recipe-cards > *:nth-child(6) {
   justify-self: end;
 }
@@ -286,7 +286,7 @@ h4 {
 #recipes .recipe-cards > *:nth-child(2),
 #recipes .recipe-cards > *:nth-child(5) {
   justify-self: center;
-}
+} */
 
 /* Breakfast recipe section */
 #breakfast {

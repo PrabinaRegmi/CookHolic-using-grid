@@ -192,7 +192,22 @@ body {
     grid-template-columns: 1fr;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
+
+  #recipes .recipe-cards > * {
+    justify-content: start;
+  }
+
+  /* #recipes .recipe-cards > *:nth-child(3),
+#recipes .recipe-cards > *:nth-child(6) {
+  justify-self: end;
+}
+
+#recipes .recipe-cards > *:nth-child(2),
+#recipes .recipe-cards > *:nth-child(5), {
+  justify-self: center;
+} */
 
   #recipes a {
     display: none;
