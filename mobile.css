@@ -196,7 +196,7 @@ body {
   }
 
   #recipes .recipe-cards > * {
-    justify-item: start;
+    justify-item: center;
   }
 
   /* #recipes .recipe-cards > *:nth-child(3),
