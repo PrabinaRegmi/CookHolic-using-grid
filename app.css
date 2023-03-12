@@ -151,9 +151,10 @@ h4 {
 #navbar {
   background-color: var(--secondary-color);
   color: #fff;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 2;
+  height: 70px;
 }
 
 #navbar li a {
@@ -162,7 +163,7 @@ h4 {
 
 #navbar .container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 1rem;
   text-align: center;
   justify-content: space-between;
@@ -186,11 +187,24 @@ h4 {
 #navbar .container .navlists li a:hover {
   color: var(--primary-color);
 }
-
+/* 
 #navbar .container .social {
   justify-self: end;
   display: flex;
   gap: 2rem;
+} */
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: all 0.3 ease;
 }
 
 /* header-showcase section */
