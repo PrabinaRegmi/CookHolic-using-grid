@@ -21,10 +21,36 @@ body {
 }
 
 /* Navigation */
-#navbar .container .navlists {
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.navlists.active {
   display: flex;
   flex-direction: column;
   gap: 0rem;
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  background-color: var(--secondary-color);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.navlists .nav-item {
+  margin: 16px 0;
 }
 
 /* header-showcase section */
