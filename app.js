@@ -11,3 +11,4 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navlists.classList.remove("active");
 
 }))
+
